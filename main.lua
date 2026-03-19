@@ -13,8 +13,9 @@ local function touchthem()
         pad.CanCollide = false
         firetouchinterest(pad, root, 1)
         task.wait()
-        touchthem()
     end
+	task.wait(.2)
+    touchthem()
 end
 
 local ui = Instance.new("ScreenGui")
