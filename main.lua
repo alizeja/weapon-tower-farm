@@ -8,7 +8,7 @@ local function touchthem()
     for i, pad in pads:GetChildren() do
         if not active then return end
         local root = plr.Character:FindFirstChild("HumanoidRootPart")
-        if not root then task.wait(.05) touchthem() return end
+        if not root then task.wait(.05) return end
         if pad.Amount.Value ~= 10000 then continue end
         pad.CanCollide = false
         firetouchinterest(pad, root, 1)
