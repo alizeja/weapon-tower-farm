@@ -11,7 +11,7 @@ local function touchthem()
         if not root then task.wait(.05) touchthem() return end
         if pad.Amount.Value ~= 10000 then continue end
         pad.CanCollide = false
-        firetouchinterest(pad, root)
+        firetouchinterest(pad, root, 1)
         task.wait()
         touchthem()
     end
